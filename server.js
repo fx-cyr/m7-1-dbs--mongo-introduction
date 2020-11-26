@@ -15,7 +15,9 @@ express()
   .use(express.urlencoded({ extended: false }))
   .use("/", express.static(__dirname + "/"))
 
-  // exercise 1
+  //Endpoint, exercices 3
+  .get("/exercise-1/users", getUsers)
+  .post("/exercise-1/users", addUser)
 
   // exercise 2
 
